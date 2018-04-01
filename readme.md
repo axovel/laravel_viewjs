@@ -57,3 +57,48 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## Requirement
+
+Minimum requirement to run the project :
+- **[PHP version >= 7.1.3]**
+- **[NPM sholud also be installed on the system]**
+
+## Installation
+
+To start with the project 
+- git clone the project on the php directory
+- Edit the **.env.example** in the project directory and add database credentials in it, after that save it in the project directory by the name of **.env**
+- Create a database with the same name as that entered in the **.env** file in **phpmyadmin**
+- Once all the above steps are done open the **git bash console** or any other from where you can run the **composer commands and npm commands** and goto the project directory
+- Run the 
+```
+composer install
+php artisan migrate
+php artisan db:seed
+```
+- The above commands will generate all the required table and add dummy data in the project for the use.
+- After the above steps run the npm command to install the npm dependencies
+```
+npm install
+```
+- Once the npm install command run successfull run the following command to compile the vue js file
+```
+npm run dev
+```
+- The above command will compile all the required vue js file, if you want to make changes in the vue js file run the following command till the development is completed it will provide the same functionality as of **npm run dev** except you don't have to run it again and again on  any change and will show all the error as well in the console. Once all has done press **Ctrl+C** to close the watch command.
+```
+npm run watch
+```
+- After the above step run the following command to run the project it will provide you the **localhost:8000** url where you can check the project running.
+```
+php artisan server
+```
+
+## Login Credentials
+
+Super admin login credentials are as follow
+```
+email: akash.axovel@gmail.com
+password: admin123
+```
